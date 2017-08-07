@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <groupId>com.icooding</groupId>
+    <version>1.0</version>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>weixin-spring-boot-starter</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.ligth</groupId>
+            <artifactId>ligth-weixin</artifactId>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.5.2.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>cn.ligth</groupId>
+                <artifactId>ligth-weixin</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>my-repository</id>
+            <url>https://raw.githubusercontent.com/jaguar-zc/maven-rpeo/master</url>
+        </repository>
+
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>localRepository</id>
+            <url>file:D:/weixinspirngbootstarter</url>
+        </repository>
+    </distributionManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <!--&lt;!&ndash; 过滤后缀为pem、pfx的证书文件 &ndash;&gt;-->
+                    <!--<nonFilteredFileExtensions>-->
+                    <!--<nonFilteredFileExtension>p12</nonFilteredFileExtension>-->
+                    <!--</nonFilteredFileExtensions>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
