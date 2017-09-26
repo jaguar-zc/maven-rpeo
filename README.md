@@ -15,6 +15,11 @@
 	</dependency>
 ```
 
+2017-09-26
+
+1.icooding-utils:1.0
+---
+
 2017-09-25
 
 1.icooding-doc:1.0
