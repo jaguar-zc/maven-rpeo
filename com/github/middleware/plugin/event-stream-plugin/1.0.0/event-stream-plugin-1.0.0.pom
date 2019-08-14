@@ -14,6 +14,19 @@
     </modules>
     <packaging>pom</packaging>
 
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/match-middleware/event-stream-plugin</url>
+        <connection>https://github.com/match-middleware/event-stream-plugin.git</connection>
+    </scm>
     <properties>
         <event-stream-version>1.0.0</event-stream-version>
     </properties>
@@ -37,6 +50,18 @@
             <url>file:D:/sources/maven-rpeo/</url>
         </repository>
     </distributionManagement>
+
+    <developers>
+        <developer>
+            <name>zhangchao</name>
+            <id>zhangchao</id>
+            <email>jaguar_zc@sina.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
     <build>
         <plugins>
             <plugin>
