@@ -13,6 +13,16 @@
 		<artifactId>icooding-doc</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</dependency>
+	
+	
+	
+	
+	<dependency>
+		<groupId>com.github</groupId>
+		<artifactId>template-http</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</dependency>
+	
 ```
 
 2017-09-26
